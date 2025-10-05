@@ -1,6 +1,5 @@
 flask
 joblib
 numpy
-numpy-base
 requests
 scikit-learn
