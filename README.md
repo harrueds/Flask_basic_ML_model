@@ -72,4 +72,4 @@ El proyecto ejemplifica un flujo de trabajo básico para desplegar un modelo de 
 
 Se agregó CI/CD para verificar el buen funcionamiento del proyecto.
 
-[![CI/CD Pipeline](https://github.com/harrueds/Flask_basic_ML_model/actions/workflows/ci-cd.yaml/badge.svg)](https://github.com/harrueds/Flask_basic_ML_model/actions/workflows/ci-cd.yaml)
+[![CI/CD ML Flask](https://github.com/harrueds/Flask_basic_ML_model/actions/workflows/ci-cd.yaml/badge.svg)](https://github.com/harrueds/Flask_basic_ML_model/actions/workflows/ci-cd.yaml)
