@@ -67,3 +67,8 @@ El dataset Breast Cancer Wisconsin Diagnostic contiene 30 variables numéricas q
 ## Conclusión
 
 El proyecto ejemplifica un flujo de trabajo básico para desplegar un modelo de aprendizaje automático. Comprende desde el entrenamiento y la serialización del modelo hasta la creación de un servicio web accesible mediante solicitudes HTTP y su validación mediante pruebas. Este enfoque constituye la base para escenarios más complejos de integración de modelos en aplicaciones reales.
+
+### Actualización
+
+Se agregó CI/CD para verificar el buen funcionamiento del proyecto.
+[![CI/CD Pipeline](https://github.com/harrueds/Flask_basic_ML_model/actions/workflows/ci-cd.yaml/badge.svg)](https://github.com/harrueds/Flask_basic_ML_model/actions/workflows/ci-cd.yaml)
