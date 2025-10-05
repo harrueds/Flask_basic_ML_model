@@ -1,6 +1,6 @@
-flask==3.1.2
-joblib==1.5.1
-numpy==2.0.1
-numpy-base==2.0.1
-requests==2.32.
-scikit-learn==1.7.1
+flask
+joblib
+numpy
+numpy-base
+requests
+scikit-learn

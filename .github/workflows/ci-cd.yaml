@@ -1,0 +1,47 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code (Verificar el código)
+        uses: actions/checkout@v3
+
+      - name: Set up Python (Configurar Python)
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies (Instalar dependencias)
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Train model (Entrenar modelo)
+        run: |
+          python training.py
+
+      - name: Start API (Iniciar API)
+        run: |
+          nohup python app.py &
+          sleep 5
+
+      - name: Run API tests (Ejecutar pruebas de API)
+        run: |
+          python test_api.py
+
+      - name: Build project (Construir proyecto) Marcador de posición genérico
+        run: |
+          echo "Add build steps here"
+
+      - name: Deploy (Desplegar)
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: |
+          echo "Add deployment steps here"
