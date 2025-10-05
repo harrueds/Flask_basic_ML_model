@@ -51,3 +51,36 @@ pip-selfcheck.json
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Compressed files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.gz
+*.bz2
+*.xz
+*.tgz
+*.zst
+*.lzma
+*.lz
+*.cab
+*.iso
+*.dmg
+*.img
+*.vhd
+*.vmdk
+*.qcow2
+*.ova
+*.ovar
+*.ovf
+*.box
+*.vagrant/  # Vagrant boxes directory
+*.jar
+*.war
+*.ear
+*.apk
+*.aab
+*.deb
+*.rpm
+*.msi
